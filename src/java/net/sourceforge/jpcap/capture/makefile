@@ -57,7 +57,7 @@ ifeq ($(OSFLAVOR), UNIX)
 		-I/usr/include/pcap \
 		-I${JAVA_HOME}/include \
 		-I${JAVA_HOME}/include/$(OTL)
-	LIBS = -lnsl /usr/lib/libpcap.a
+	LIBS = -lnsl -lpcap
 else
 # Mac OS X
 ifeq ($(OSFLAVOR), DARWIN)

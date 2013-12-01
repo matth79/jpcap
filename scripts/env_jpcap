@@ -14,7 +14,7 @@
 #
 
 # change to the location in your workspace where jpcap is checked out..
-export PROJECT_HOME=~/dev/github/jpcap
+export PROJECT_HOME=~/jpcap
 
 # NOTE: Windows users, with MinGW, '~/' doesn't work in CLASSPATH. Instead:
 #export PROJECT_HOME=/home/$USERNAME/dev/sourceforge/jpcap

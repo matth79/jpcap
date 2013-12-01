@@ -18,7 +18,7 @@
 extern "C" {
 #include <pcap.h>
 }
-#include <JavaVM/jni.h>
+#include <jni.h>
 #include "process.hpp"
 
 
@@ -66,7 +66,7 @@ static pcap_t *PD[10] = // packet capture device.
   {NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL}; 
 jobject javaObject; // reference to java object hooked into this wrapper lib.
 JNIEnv *javaEnvironment; // java vm containing running java object.
-const int VERBOSE = 0; // for debugging
+const int VERBOSE = 0;
 
 typedef struct pcap_attr {
   int pcapGo;
@@ -675,8 +675,7 @@ Java_net_sourceforge_jpcap_capture_PacketCapture_lookupDevices
     ifrSize = sizeof(struct ifreq);
 #endif /* HAVE_SA_LEN */
 
-  char *s;
-  for(;ifr < last; (char*)ifr += ifrSize, ifr=(struct ifreq *)s) {
+  for(;ifr < last; ifr += ifrSize) {
     /* Skip "dummy" and "alaias" interface */
     /*
     if(strncmp(ifr->ifr_name,"dummy",5)==0 || 

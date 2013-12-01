@@ -19,7 +19,7 @@ endif
 endif
 
 ifeq ($(OSFLAVOR), UNIX)
-	LIBS = -lnsl /usr/lib/libpcap.a
+	LIBS = -lnsl -lpcap
 else
 ifeq ($(OSFLAVOR), DARWIN)
 	LIBS = /usr/lib/libpcap.A.dylib

@@ -9,7 +9,7 @@
 extern "C" {
 #include <pcap.h>
 }
-#include <JavaVM/jni.h>
+#include <jni.h>
 
 
 /**

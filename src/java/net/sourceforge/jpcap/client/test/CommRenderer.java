@@ -5,7 +5,7 @@
  * Distributed under the Mozilla Public License                            *
  *   http://www.mozilla.org/NPL/MPL-1.1.txt                                *
  ***************************************************************************/
-package net.sourceforge.jpcap.client;
+package net.sourceforge.jpcap.client.test;
 
 import java.util.Iterator;
 import java.util.HashSet;

@@ -1,1 +1,3 @@
 *.class
+jars/
+src/java/net/sourceforge/jpcap/capture/libjpcap.so

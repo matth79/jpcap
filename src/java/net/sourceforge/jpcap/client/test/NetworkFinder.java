@@ -6,7 +6,7 @@
  *   http://www.mozilla.org/NPL/MPL-1.1.txt                                *
  ***************************************************************************/
 
-package net.sourceforge.jpcap.client;
+package net.sourceforge.jpcap.client.test;
 
 import net.sourceforge.jpcap.capture.*;
 import net.sourceforge.jpcap.net.*;
